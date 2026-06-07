@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kontakt</title>
+
+<link rel="stylesheet" href="myslivost.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Myslivecký spolek</title>
+
+<meta name="description" content="Oficiální web mysliveckého spolku – informace o akcích, členech a hře.">
+<meta name="author" content="Myslivecký spolek">
+
+<!-- SEO klíčová slova (bonus) -->
+<meta name="keywords" content="myslivost, spolek, les, zvěř, hon, akce">
+
+<!-- Open Graph (Facebook / Discord / WhatsApp) -->
+<meta property="og:title" content="Myslivecký spolek">
+<meta property="og:description" content="Akce, členové a myslivecká hra">
+<meta property="og:type" content="website">
+<meta property="og:image" content="forest.jpg">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Myslivecký spolek">
+<meta name="twitter:description" content="Oficiální web spolku">
+<meta name="twitter:image" content="forest.jpg">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Myslivecký spolek</div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">O nás</a></li>
+        <li><a href="historie.html">Historie</a></li>
+        <li><a href="clenove.html">Členové</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="akce.html">Akce</a></li>
+        <li><a href="hra.html">Hra</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="leaves-container">
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+</div>
+<main class="section contact-section">
+
+    <div class="section-title">
+        <h2>Kontakt</h2>
+        <p>Ozvěte se nám – rádi odpovíme na vaše dotazy</p>
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="glass">
+            <h3>📍 Myslivecký spolek</h3>
+            <p><strong>Adresa:</strong> Bílý Kostel nad Nisou</p>
+            <p><strong>Telefon:</strong> +420 777 123 456</p>
+            <p><strong>Email:</strong> myslivci@email.cz</p>
+            <p><strong>Provoz:</strong> Po–Pá 8:00–18:00</p>
+
+            <hr style="margin:20px 0; opacity:0.2;">
+
+            <p>
+                Jsme místní myslivecký spolek zaměřený na péči o krajinu,
+                zvěř a tradice myslivosti v regionu.
+            </p>
+        </div>
+
+        <!-- FORM -->
+        <div class="glass">
+            <form id="contactForm">
+
+                <input type="text" id="name" placeholder="Jméno a příjmení" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="subject" placeholder="Předmět" required>
+
+                <textarea id="message" placeholder="Vaše zpráva..." required></textarea>
+
+                <button type="submit">Odeslat zprávu</button>
+
+            </form>
+
+            <p id="formStatus" style="margin-top:15px; color:#9dd77a;"></p>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="myslivost.js"></script>
+</body>
+</html>

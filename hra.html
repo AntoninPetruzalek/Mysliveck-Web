@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hra</title>
+
+<link rel="stylesheet" href="hra.css">
+
+<link rel="stylesheet" href="myslivost.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Myslivecký spolek</title>
+
+<meta name="description" content="Oficiální web mysliveckého spolku – informace o akcích, členech a hře.">
+<meta name="author" content="Myslivecký spolek">
+
+<!-- SEO klíčová slova (bonus) -->
+<meta name="keywords" content="myslivost, spolek, les, zvěř, hon, akce">
+
+<!-- Open Graph (Facebook / Discord / WhatsApp) -->
+<meta property="og:title" content="Myslivecký spolek">
+<meta property="og:description" content="Akce, členové a myslivecká hra">
+<meta property="og:type" content="website">
+<meta property="og:image" content="forest.jpg">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Myslivecký spolek">
+<meta name="twitter:description" content="Oficiální web spolku">
+<meta name="twitter:image" content="forest.jpg">
+</head>
+
+<body class="game-page">
+
+<nav class="navbar">
+    <div class="logo">Myslivecká hra</div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">O nás</a></li>
+        <li><a href="historie.html">Historie</a></li>
+        <li><a href="clenove.html">Členové</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="akce.html">Akce</a></li>
+        <li><a href="hra.html">Hra</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="leaves-container">
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+</div>
+
+<div class="game-ui">
+    <h2>Body: <span id="score">0</span></h2>
+    <button id="dogButton">🐕 Lovecký pes (100)</button>
+</div>
+
+<div id="gameArea"></div>
+
+<div class="crosshair"></div>
+
+<script src="myslivost.js"></script>
+<script src="hra.js"></script>
+</body>
+</html>

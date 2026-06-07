@@ -1,0 +1,50 @@
+# 🌲 Myslivecký spolek – moderní webová prezentace
+
+## 📌 Úvod
+Tento projekt je moderní webová prezentace mysliveckého spolku doplněná o jednoduchou interaktivní hru (lovecký simulátor). Web slouží jako fiktivní oficiální stránka spolku a obsahuje informace o členech, akcích, galerii a kontaktech.
+
+🔗 Živá verze (GitHub Pages):  
+https://tvuj-github-link.github.io
+
+---
+
+## 🛠 Použité technologie
+- HTML5
+- CSS3 (Flexbox, Grid, moderní layouty)
+- Vanilla JavaScript (ES6+)
+- VS Code (IDE)
+
+---
+
+## 📁 Struktura projektu
+/index.html
+/akce.html
+/clenove.html
+/galerie.html
+/historie.html
+/kontakt.html
+/hra.html
+
+/myslivost.css
+/myslivost.js
+/hra.js
+
+/forest.jpg
+/diana.jpg
+
+
+---
+
+# ⚙️ 1. Performance (Výkon)
+
+## 📖 Teorie
+Performance optimalizace zajišťuje rychlé načítání webu, minimalizaci dat a efektivní vykreslování.
+
+## ✅ Implementace
+- Použití jednoduchého CSS bez frameworků
+- Minimalizace externích knihoven
+- Dynamické generování prvků v JS místo HTML duplicit
+
+## 💡 Ukázka kódu
+```html
+<img src="forest.jpg" loading="lazy" alt="les">

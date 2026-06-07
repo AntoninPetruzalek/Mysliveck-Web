@@ -1,0 +1,198 @@
+/* =========================
+   HERNÍ STRÁNKA
+   ========================= */
+
+body.game-page {
+    cursor: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   POZADÍ HRY
+   ========================= */
+
+#gameArea {
+    position: fixed;
+    inset: 0;
+
+    background-image: url("forest.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 10000;
+}
+
+/* =========================
+   HERNÍ UI
+   ========================= */
+
+.game-ui {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+
+    z-index: 10001;
+
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+/* =========================
+   TLAČÍTKO PSA
+   ========================= */
+
+#dogButton {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #5e8f49;
+    color: white;
+
+    cursor: pointer;
+}
+
+#dogButton:hover {
+    opacity: 0.9;
+}
+
+/* =========================
+   CROSSHAIR
+   ========================= */
+
+.crosshair {
+    position: fixed;
+
+    width: 40px;
+    height: 40px;
+
+    border: 3px solid white;
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 10002;
+}
+
+.crosshair::before,
+.crosshair::after {
+    content: "";
+    position: absolute;
+    background: white;
+}
+
+.crosshair::before {
+    width: 2px;
+    height: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.crosshair::after {
+    width: 40px;
+    height: 2px;
+    top: 50%;
+}
+
+/* =========================
+   ZVÍŘATA
+   ========================= */
+
+.animal {
+    position: absolute;
+    font-size: 50px;
+
+    user-select: none;
+    cursor: pointer;
+
+    z-index: 10;
+
+    animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   LOVECKÝ PES
+   ========================= */
+
+.dog-effect {
+    position: fixed;
+    left: -200px;
+    bottom: 80px;
+
+    font-size: 120px;
+
+    z-index: 10003;
+
+    animation: run 0.8s linear forwards;
+}
+
+@keyframes run {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 120%;
+    }
+}
+
+/* =========================
+   MOBIL
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .game-ui {
+        top: 80px;
+        left: 10px;
+        padding: 10px;
+    }
+
+    .crosshair {
+        width: 30px;
+        height: 30px;
+    }
+
+    .crosshair::before {
+        height: 30px;
+    }
+
+    .crosshair::after {
+        width: 30px;
+    }
+}
