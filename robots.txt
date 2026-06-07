@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://antoninpetruzalek.github.io/Mysliveck-Web/myslivost.xml
